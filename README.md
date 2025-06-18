@@ -34,29 +34,29 @@ https://rashi7903.github.io/Yatzy-game/
 
 🚀 How to Play
 
-Each player takes turns rolling 5 dice.
+-Each player takes turns rolling 5 dice.
 
-You can roll up to 3 times per turn and select dice to keep.
+-You can roll up to 3 times per turn and select dice to keep.
 
-After final roll, select a category to score points.
+-After final roll, select a category to score points.
 
-Each category can be used only once per player.
+-Each category can be used only once per player.
 
-Suggested points appear in brackets during your turn.
+-Suggested points appear in brackets during your turn.
 
-After all categories are filled, the game ends.
+-After all categories are filled, the game ends.
 
-The player with the highest total score wins!
+-The player with the highest total score wins!
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Built With
 
-HTML5
+* HTML5
 
-CSS3
+* CSS3
 
-JavaScript
+* JavaScript
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
