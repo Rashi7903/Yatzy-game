@@ -1,6 +1,8 @@
 🎲 Yatzy Game
 
-A fun and interactive web-based Yatzy game for 2 players, built using HTML, CSS, and JavaScript. Players take turns rolling dice and selecting scoring categories. The player with the highest total score wins!
+A fun and interactive web-based Yatzy game for 2 players, built using HTML, CSS, and JavaScript. 
+Players take turns rolling dice and selecting scoring categories.
+The player with the highest total score wins!
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
