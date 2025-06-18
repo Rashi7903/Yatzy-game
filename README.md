@@ -41,13 +41,7 @@ yatzy-game/
 ├── script.js         # Game logic
 └── README.md         # Game description and instructions
 
- 💡 Future Improvements
-
-* Add sound effects and animations
-* Support for single-player (vs AI)
-* Mobile responsive layout
-* Save high scores
-
+ 
 ### 🧑‍💻 Author
 
 Made with ❤️ by **Rashi**
