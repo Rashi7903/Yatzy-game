@@ -41,8 +41,5 @@ yatzy-game/
 ├── script.js         # Game logic
 └── README.md         # Game description and instructions
 
- 
-### 🧑‍💻 Author
 
-Made with ❤️ by **Rashi**
 
