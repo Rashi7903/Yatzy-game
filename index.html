@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yatzy Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 Yatzy Game</h1>
+    <div class="scores">
+      <span id="player1-label">Player 1: <span id="score1">0</span></span>
+      <span id="player2-label">Player 2: <span id="score2">0</span></span>
+    </div>
+
+    <div class="instructions">
+      <h3>📘 How to Play</h3>
+      <ul>
+        <li>This is a two-player Yatzy game 🎲</li>
+        <li>Each player takes turns rolling five dice.</li>
+        <li>You can roll up to 3 times per turn and select dice to keep between rolls.</li>
+        <li>After rolling, choose a scoring category to lock in your points.</li>
+        <li>Each category can be used only once per player.</li>
+        <li>Suggested scores appear in parentheses during your turn.</li>
+        <li>Highest total after all categories filled wins!</li>
+      </ul>
+    </div>
+
+    <div class="game-area">
+      <div id="roll-info">Rolls Left: <span id="rolls-left">3</span></div>
+      <div class="dice" id="dice-container">
+        <!-- Dice will be generated dynamically -->
+      </div>
+      <button id="roll-button">ROLL</button>
+    </div>
+
+    <table id="score-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Player 1</th>
+          <th>Player 2</th>
+        </tr>
+      </thead>
+      <tbody id="score-body">
+        <!-- Score rows will be generated dynamically -->
+      </tbody>
+    </table>
+
+    <div id="result-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
