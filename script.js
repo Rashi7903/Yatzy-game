@@ -3,6 +3,13 @@ const categories = [
   "Three of a Kind", "Four of a Kind", "Full House",
   "Small Straight", "Large Straight", "Yatzy", "Chance"
 ];
+let isSinglePlayer = true;
+document.querySelectorAll('input[name="mode"]').forEach(radio => {
+  radio.addEventListener('change', (e) => {
+    isSinglePlayer = e.target.value === "1";
+    resetGame();
+  });
+});
 
 let currentPlayer = 1;
 let rollsLeft = 3;
@@ -125,7 +132,43 @@ function resetTurn() {
   rollsLeftDisplay.textContent = rollsLeft;
   renderDice();
   clearSuggestions();
+
+  if (isSinglePlayer && currentPlayer === 2) {
+    setTimeout(aiTakeTurn, 800);  // short delay for realism
+  }
 }
+function aiTakeTurn() {
+  // Roll dice up to 3 times (random keep)
+  for (let r = 0; r < 3; r++) {
+    for (let i = 0; i < 5; i++) {
+      if (!selectedDice[i]) {
+        dice[i] = Math.floor(Math.random() * 6) + 1;
+      }
+    }
+    // Randomly select dice to keep
+    selectedDice = selectedDice.map(() => Math.random() > 0.5);
+  resultMessage.textContent = currentPlayer === 2 && isSinglePlayer ? "AI is choosing..." : "";
+}
+
+  // Choose best available category
+  let bestScore = -1;
+  let bestCategory = null;
+
+  for (let category of categories) {
+    if (!usedCategories[2].has(category)) {
+      let score = calculateScore(category, dice);
+      if (score > bestScore) {
+        bestScore = score;
+        bestCategory = category;
+      }
+    }
+  }
+
+  if (bestCategory) {
+    selectCategory(bestCategory, bestScore);
+  }
+}
+
 
 function clearSuggestions() {
   const cells = document.querySelectorAll("td");
