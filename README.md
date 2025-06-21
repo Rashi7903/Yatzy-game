@@ -1,6 +1,6 @@
 🎲 Yatzy Game
 
-A fun and interactive web-based Yatzy game for 2 players, built using HTML, CSS, and JavaScript. 
+A fun and interactive web-based Yatzy game for 1 or 2 players, built using HTML, CSS, and JavaScript. 
 Players take turns rolling dice and selecting scoring categories.
 The player with the highest total score wins!
 
@@ -8,13 +8,17 @@ The player with the highest total score wins!
 
 📌 Features
 
-🎯 Two-player game with turn tracking
+🎮 1 or 2 player mode
 
-🎲 Five dice roll simulation with up to 3 re-rolls
+🤖 AI opponent that plays automatically when selected
+
+🎲 Dice roll simulation with 3 roll attempts per turn
+
+✅ Dice holding & re-rolling
 
 💡 Score suggestions shown dynamically
 
-🧠 12 scoring categories including:
+🧠 13 scoring categories including:
 
 Ones, Twos, Threes, Fours, Fives, Sixes
 
@@ -36,6 +40,8 @@ https://rashi7903.github.io/Yatzy-game/
 
 🚀 How to Play
 
+- Choose **Single Player (vs AI)** or **Two Player** mode.
+  
 -Each player takes turns rolling 5 dice.
 
 -You can roll up to 3 times per turn and select dice to keep.
@@ -77,4 +83,3 @@ This project is licensed under the MIT License.
 ⭐️ Show your support
 
 If you like this project, give it a ⭐️ on GitHub! Feel free to fork, contribute, or share 🚀.
-
